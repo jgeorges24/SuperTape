@@ -4,9 +4,9 @@ class CreateMixtapes < ActiveRecord::Migration[6.1]
       t.string :title
       t.string :description
       t.string :artist
-      t.integer :tracks
-      t.integer :likes
-      t.integer :dislikes
+      t.integer :tracks, :default => 0
+      t.integer :likes, :default => 0
+      t.integer :dislikes, :default => 0
       t.string :genre
 
       t.timestamps
